@@ -11,7 +11,7 @@ internal class TrainedDataCollection : ITrainedDataCollection
     /// AddFile Traineddata file. (Filename with extension only)
     /// </summary>
     /// <param name="fileName"></param>
-    /// <exception cref="PlatformNotSupportedException">If not targetting maui (TargetFramework is [net7.0].</exception>
+    /// <exception cref="PlatformNotSupportedException">If not targetting maui (TargetFramework is [net9.0].</exception>
     /// <exception cref="ArgumentNullException">If filename is null or empty.</exception>
     /// <exception cref="ArgumentException">If filename does not exist in app packages. (See folder "Resources\Raw")</exception>
     public void AddFile(string fileName)

@@ -24,7 +24,7 @@ internal class TessDataProvider : ITessDataProvider
     /// <param name="configuration">Change object settings with configuration object.</param>
     /// <param name="logger"></param>
     /// <exception cref="ArgumentNullException">When collection or configuration is null.</exception>
-    /// <exception cref="PlatformNotSupportedException">If not targetting maui (TargetFramework is [net7.0].</exception>
+    /// <exception cref="PlatformNotSupportedException">If not targetting maui (TargetFramework is [net9.0].</exception>
     public TessDataProvider(
         ITrainedDataCollection collection, 
         ITessDataProviderConfiguration configuration, 
@@ -57,7 +57,7 @@ internal class TessDataProvider : ITessDataProvider
     ILogger<ITessDataProvider> Logger { get; }
 
     /// <inheritdoc />
-    /// <exception cref="PlatformNotSupportedException">If not targetting maui (TargetFramework is [net7.0].</exception>
+    /// <exception cref="PlatformNotSupportedException">If not targetting maui (TargetFramework is [net9.0].</exception>
     public async Task<DataLoadResult> LoadFromPackagesAsync()
     {
         var files = TrainedDataCollection.GetTrainedDataFileNames();

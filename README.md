@@ -25,10 +25,10 @@ Currently supports Windows, iOS and Android. Library is meant to be used with .N
 
 Supported runtimes
 
-> net7.0 or newer  
-> net7.0-windows10.0.19041 or newer  
-> net7.0-android or newer  
-> net7.0-ios or newer  
+> net9.0 or newer  
+> net9.0-windows10.0.19041 or newer  
+> net9.0-android or newer  
+> net9.0-ios or newer  
 
 Only png and jpeg libraries are compiled into tesseract native libraries, so only these image types are supported. Additional image libraries are added if needed later.
 

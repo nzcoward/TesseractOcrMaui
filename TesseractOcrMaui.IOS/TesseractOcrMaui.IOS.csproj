@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net7.0-ios</TargetFramework>
+		<TargetFramework>net9.0-ios</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>true</ImplicitUsings>
 		<IsBindingProject>true</IsBindingProject>
@@ -31,7 +31,7 @@
 		<!-- include xcframework in nuget -->
 		<None Include="tesseract.xcframework/**" >
 			<Pack>true</Pack>
-			<PackagePath>lib/net7.0-ios16.1/TesseractOcrMaui.IOS.resources/tesseract.xcframework</PackagePath>
+			<PackagePath>lib/net9.0-ios16.1/TesseractOcrMaui.IOS.resources/tesseract.xcframework</PackagePath>
 		</None>
 		<!-- include Readme-->
 		<None Include="Properties/README.md" Link="Properties/README.md">
@@ -41,7 +41,7 @@
 		<!-- include dll manifest file -->
 		<None Include="Configuration/manifest" Condition="'$(IsWindows)' == 'true'">
 			<Pack>true</Pack>
-			<PackagePath>lib/net7.0-ios16.1/TesseractOcrMaui.IOS.resources/</PackagePath>
+			<PackagePath>lib/net9.0-ios16.1/TesseractOcrMaui.IOS.resources/</PackagePath>
 		</None>
 	</ItemGroup>
 
