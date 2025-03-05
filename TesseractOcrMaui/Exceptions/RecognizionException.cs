@@ -12,6 +12,4 @@ internal class ImageRecognizionException : TesseractException
     public ImageRecognizionException(string message) : base(message) { }
 
     public ImageRecognizionException(string message, Exception innerException) : base(message, innerException) { }
-
-    protected ImageRecognizionException(SerializationInfo info, StreamingContext context) : base(info, context) { }
 }

@@ -63,6 +63,10 @@
 		<AndroidNativeLibrary Include="lib\Android\**" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+	</ItemGroup>
+	
 	<!-- Windows native libraries to nuget -->
 	<!-- No condition needed, because package path tells to include in windows -->
 	<ItemGroup Condition="'$(Configuration)' == 'Release' ">

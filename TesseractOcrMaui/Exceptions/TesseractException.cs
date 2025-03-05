@@ -26,13 +26,4 @@ public class TesseractException : Exception
     public TesseractException(string? message, Exception? innerException) : base(message, innerException)
     {
     }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="info"></param>
-    /// <param name="context"></param>
-    protected TesseractException(SerializationInfo info, StreamingContext context) : base(info, context)
-    {
-    }
 }

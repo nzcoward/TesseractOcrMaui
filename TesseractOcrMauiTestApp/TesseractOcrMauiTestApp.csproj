@@ -8,6 +8,7 @@
 		<OutputType>Exe</OutputType>
 		<RootNamespace>TesseractOcrMauiTestApp</RootNamespace>
 		<UseMaui>true</UseMaui>
+		<MauiVersion>[9.0.30, 10.0.0)</MauiVersion>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
@@ -59,7 +60,8 @@
 	</ItemGroup>
 	
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="[9.0.0, 10.0.0)" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 	</ItemGroup>
 	
 	<ItemGroup>
